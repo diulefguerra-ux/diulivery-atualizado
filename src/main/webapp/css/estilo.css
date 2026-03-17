@@ -1,0 +1,96 @@
+tabela-diulivery tr:hover {
+    background-color: #fff5eb; /* Um laranja bem clarinho ao passar o mouse */
+    transition: 0.3s;
+}
+
+/* 1. Definições de Cores e Estilo (Paleta Rawhaus) */
+:root {
+    --laranja-vibrante: #F25C05; 
+    --fundo-creme: #F2E9E4;      
+    --texto-escuro: #262626;     
+    --borda-ilustracao: 2px solid #262626; 
+}
+
+/* 2. Estilo Geral do Site */
+body {
+    background-color: var(--fundo-creme);
+    font-family: 'Poppins', sans-serif; 
+    color: var(--texto-escuro);
+    margin: 0;
+    padding: 20px;
+}
+
+/* 3. Cards de Pratos (Estilo Ilustração) */
+.card-prato {
+    background: white;
+    border: var(--borda-ilustracao);
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.1); 
+    transition: transform 0.2s;
+    overflow: hidden;
+    padding: 15px;
+    margin: 10px;
+}
+
+.card-prato:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px var(--laranja-vibrante);
+}
+
+/* 4. Botões Estilizados */
+.btn-delivery {
+    background-color: var(--laranja-vibrante);
+    color: white;
+    border: var(--borda-ilustracao);
+    border-radius: 50px; 
+    padding: 10px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* 5. Inputs e Formulários Padronizados */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: var(--borda-ilustracao);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 6. Tabelas Estilizadas (Para Clientes e Pedidos) */
+.tabela-diulivery {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: var(--borda-ilustracao);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tabela-diulivery th {
+    background-color: var(--laranja-vibrante);
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabela-diulivery td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-diulivery tr:hover {
+    background-color: #fffaf0; /* Um creme bem clarinho no hover da linha */
+}
+
+/* 7. Utilitários de Layout */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
